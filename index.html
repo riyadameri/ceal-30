@@ -1,0 +1,1999 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تكتل الطلبة الجزائريين الأحرار - ورقلة | صناعة قادة المستقبل</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <style>
+        /* المتغيرات والأساسيات */
+        :root {
+            --primary-green: #006633;
+            --dark-green: #004d26;
+            --light-green: #009944;
+            --lighter-green: #e6f4ea;
+            --gold: #D4AF37;
+            --light-gold: #F4E4A6;
+            --dark-gold: #b8941f;
+            --white: #FFFFFF;
+            --light-gray: #F8F9FA;
+            --medium-gray: #E9ECEF;
+            --dark-gray: #212529;
+            --text-color: #333333;
+            --shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+            --transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.1);
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        body {
+            font-family: 'Cairo', sans-serif;
+            line-height: 1.8;
+            color: var(--text-color);
+            background-color: var(--white);
+            direction: rtl;
+            overflow-x: hidden;
+        }
+        
+        h1, h2, h3, h4, h5, h6 {
+            color: var(--dark-green);
+            margin-bottom: 1.5rem;
+            font-weight: 800;
+            line-height: 1.3;
+        }
+        
+        h1 {
+            font-size: 3.5rem;
+            position: relative;
+            display: inline-block;
+            margin-bottom: 2rem;
+        }
+        
+        h1::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            right: 0;
+            width: 80px;
+            height: 5px;
+            background: linear-gradient(to right, var(--gold), var(--light-green));
+            border-radius: 5px;
+        }
+        
+        h2 {
+            font-size: 2.8rem;
+            margin-top: 3rem;
+        }
+        
+        h3 {
+            font-size: 1.8rem;
+            color: var(--light-green);
+        }
+        
+        h4 {
+            font-size: 1.5rem;
+        }
+        
+        p {
+            margin-bottom: 1.5rem;
+            font-size: 1.15rem;
+            color: var(--dark-gray);
+        }
+        
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: var(--transition);
+        }
+        
+        .highlight {
+            color: var(--gold);
+            font-weight: 700;
+        }
+        
+        .container {
+            width: 100%;
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 30px;
+        }
+        
+        .section {
+            padding: 6rem 0;
+            position: relative;
+        }
+        
+        .section-bg {
+            background-color: var(--light-gray);
+        }
+        
+        .section-pattern {
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .section-pattern::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11 18c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm48 25c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm-43-7c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm63 31c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM34 90c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm56-76c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM12 86c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm28-65c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm23-11c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-6 60c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm29 22c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zM32 63c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm57-13c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-9-21c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM60 91c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM35 41c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM12 60c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2z' fill='%23006633' fill-opacity='0.03' fill-rule='evenodd'/%3E%3C/svg%3E");
+            opacity: 0.3;
+            z-index: 0;
+        }
+        
+        .section-title {
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+        
+        .section-title h2 {
+            position: relative;
+            display: inline-block;
+            padding-bottom: 15px;
+        }
+        
+        .section-title h2::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            right: 50%;
+            transform: translateX(50%);
+            width: 100px;
+            height: 4px;
+            background: linear-gradient(to right, var(--gold), var(--light-green));
+            border-radius: 2px;
+        }
+        
+        /* الشريط العلوي */
+        .top-bar {
+            background: linear-gradient(90deg, var(--dark-green), var(--primary-green));
+            color: var(--white);
+            padding: 0.8rem 0;
+            font-size: 0.95rem;
+            position: relative;
+            z-index: 1002;
+        }
+        
+        .top-bar .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .university-info {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        
+        .university-logo {
+            height: 30px;
+            width: auto;
+        }
+        
+        .social-icons {
+            display: flex;
+            gap: 15px;
+        }
+        
+        .social-icons a {
+            color: var(--white);
+            font-size: 1.2rem;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: var(--transition);
+        }
+        
+        .social-icons a:hover {
+            background: var(--gold);
+            color: var(--dark-green);
+            transform: translateY(-3px);
+        }
+        
+        /* رأس الصفحة */
+        header {
+            background-color: var(--white);
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+            position: sticky;
+            top: 0;
+            z-index: 1001;
+            transition: var(--transition);
+        }
+        
+        header.scrolled {
+            padding: 5px 0;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+        }
+        
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1.2rem 0;
+            transition: var(--transition);
+        }
+        
+        .logo-container {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+        
+        .logo {
+            height: 80px;
+            width: auto;
+            transition: var(--transition);
+        }
+        
+        header.scrolled .logo {
+            height: 60px;
+        }
+        
+        .logo-text {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .logo-text h1 {
+            font-size: 1.8rem;
+            margin-bottom: 5px;
+            color: var(--primary-green);
+        }
+        
+        .logo-text p {
+            font-size: 0.9rem;
+            color: var(--dark-gray);
+            margin-bottom: 0;
+        }
+        
+        /* القائمة */
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 30px;
+        }
+        
+        nav ul li a {
+            font-weight: 600;
+            color: var(--dark-green);
+            padding: 8px 0;
+            position: relative;
+            font-size: 1.1rem;
+        }
+        
+        nav ul li a::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 0;
+            height: 3px;
+            background-color: var(--gold);
+            transition: width 0.3s ease;
+        }
+        
+        nav ul li a:hover {
+            color: var(--gold);
+        }
+        
+        nav ul li a:hover::after {
+            width: 100%;
+        }
+        
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 1.8rem;
+            color: var(--primary-green);
+            cursor: pointer;
+            z-index: 1003;
+        }
+        
+        /* قسم البطل */
+        .hero {
+            background: linear-gradient(135deg, rgba(0, 102, 51, 0.9) 0%, rgba(0, 77, 38, 0.95) 100%), url('https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: var(--white);
+            padding: 10rem 0 8rem;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .hero::before {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 100%;
+            height: 150px;
+            background: linear-gradient(to top, var(--white), transparent);
+        }
+        
+        .hero-content {
+            max-width: 900px;
+            margin: 0 auto;
+            text-align: center;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .hero h1 {
+            color: var(--white);
+            font-size: 4rem;
+            margin-bottom: 2rem;
+            text-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+        
+        .hero h1::after {
+            right: 50%;
+            transform: translateX(50%);
+            background: linear-gradient(to right, var(--gold), var(--light-gold));
+        }
+        
+        .hero p {
+            font-size: 1.4rem;
+            margin-bottom: 3rem;
+            color: var(--light-gold);
+            line-height: 1.8;
+        }
+        
+        .hero-stats {
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+            margin-top: 4rem;
+            flex-wrap: wrap;
+        }
+        
+        .stat-item {
+            text-align: center;
+        }
+        
+        .stat-number {
+            font-size: 3rem;
+            font-weight: 800;
+            color: var(--gold);
+            display: block;
+            line-height: 1;
+        }
+        
+        .stat-text {
+            font-size: 1.2rem;
+            color: var(--white);
+        }
+        
+        /* الأزرار */
+        .btn {
+            display: inline-block;
+            background: linear-gradient(135deg, var(--gold), var(--dark-gold));
+            color: var(--dark-green);
+            padding: 1rem 2.5rem;
+            border-radius: 50px;
+            font-weight: 700;
+            border: none;
+            cursor: pointer;
+            transition: var(--transition);
+            font-size: 1.1rem;
+            box-shadow: 0 5px 15px rgba(212, 175, 55, 0.3);
+            position: relative;
+            overflow: hidden;
+            z-index: 1;
+        }
+        
+        .btn::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 0;
+            height: 100%;
+            background: linear-gradient(135deg, var(--light-green), var(--primary-green));
+            transition: width 0.5s ease;
+            z-index: -1;
+        }
+        
+        .btn:hover::before {
+            width: 100%;
+        }
+        
+        .btn:hover {
+            color: var(--white);
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(212, 175, 55, 0.4);
+        }
+        
+        .btn-outline {
+            background: transparent;
+            border: 2px solid var(--gold);
+            color: var(--gold);
+            margin-right: 1rem;
+        }
+        
+        .btn-outline::before {
+            background: var(--gold);
+        }
+        
+        .btn-outline:hover {
+            color: var(--dark-green);
+        }
+        
+        /* رسالتنا ورؤيتنا */
+        .mission-vision {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 40px;
+            margin-top: 3rem;
+        }
+        
+        .mission-card, .vision-card {
+            background: var(--white);
+            padding: 3rem;
+            border-radius: 20px;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+            border-top: 5px solid var(--gold);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .mission-card:hover, .vision-card:hover {
+            transform: translateY(-15px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+        }
+        
+        .mission-icon, .vision-icon {
+            font-size: 3.5rem;
+            color: var(--gold);
+            margin-bottom: 1.5rem;
+        }
+        
+        /* أقسام الكليات */
+        .faculties {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 3rem;
+        }
+        
+        .faculty-card {
+            background: var(--white);
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+            height: 100%;
+        }
+        
+        .faculty-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
+        }
+        
+        .faculty-header {
+            padding: 2rem;
+            background: linear-gradient(135deg, var(--primary-green), var(--dark-green));
+            color: var(--white);
+            text-align: center;
+        }
+        
+        .faculty-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            color: var(--gold);
+        }
+        
+        .faculty-body {
+            padding: 2rem;
+        }
+        
+        .faculty-body ul {
+            list-style: none;
+            padding-right: 0;
+        }
+        
+        .faculty-body ul li {
+            padding: 0.5rem 0;
+            border-bottom: 1px solid var(--medium-gray);
+            position: relative;
+            padding-right: 25px;
+        }
+        
+        .faculty-body ul li:before {
+            content: '✓';
+            position: absolute;
+            right: 0;
+            color: var(--gold);
+            font-weight: bold;
+        }
+        
+        /* الأنشطة */
+        .activities {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 30px;
+            margin-top: 3rem;
+        }
+        
+        .activity-card {
+            background: var(--white);
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+        }
+        
+        .activity-card:hover {
+            transform: translateY(-10px) scale(1.02);
+        }
+        
+        .activity-img {
+            height: 200px;
+            width: 100%;
+            background-size: cover;
+            background-position: center;
+            position: relative;
+        }
+        
+        .activity-overlay {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to top, rgba(0, 102, 51, 0.8), transparent);
+            display: flex;
+            align-items: flex-end;
+            padding: 1.5rem;
+        }
+        
+        .activity-title {
+            color: var(--white);
+            font-size: 1.5rem;
+            margin-bottom: 0;
+        }
+        
+        .activity-body {
+            padding: 2rem;
+        }
+        
+        .activity-date {
+            color: var(--gold);
+            font-weight: 600;
+            margin-bottom: 1rem;
+            display: block;
+        }
+        
+        /* برنامج صناعة القادة */
+        .leaders-program {
+            background: linear-gradient(135deg, var(--primary-green), var(--dark-green));
+            color: var(--white);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .leaders-program::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(212, 175, 55, 0.1) 0%, transparent 70%);
+        }
+        
+        .leaders-program .section-title h2 {
+            color: var(--white);
+        }
+        
+        .leaders-program .section-title h2::after {
+            background: linear-gradient(to right, var(--gold), var(--light-gold));
+        }
+        
+        .program-steps {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-top: 4rem;
+        }
+        
+        .step {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 15px;
+            padding: 2.5rem;
+            text-align: center;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            transition: var(--transition);
+        }
+        
+        .step:hover {
+            transform: translateY(-10px);
+            background: rgba(255, 255, 255, 0.15);
+            border-color: var(--gold);
+        }
+        
+        .step-number {
+            display: inline-block;
+            width: 60px;
+            height: 60px;
+            background: var(--gold);
+            color: var(--dark-green);
+            border-radius: 50%;
+            line-height: 60px;
+            font-size: 1.8rem;
+            font-weight: 800;
+            margin-bottom: 1.5rem;
+        }
+        
+        /* الفريق */
+        .team {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 30px;
+            margin-top: 3rem;
+        }
+        
+        .team-member {
+            background: var(--white);
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+            text-align: center;
+        }
+        
+        .team-member:hover {
+            transform: translateY(-15px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+        }
+        
+        .member-photo {
+            height: 200px;
+            width: 100%;
+            background: linear-gradient(135deg, var(--primary-green), var(--dark-green));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--white);
+            font-size: 4rem;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .member-photo::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(45deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+            transform: translateX(-100%);
+            transition: transform 0.6s ease;
+        }
+        
+        .team-member:hover .member-photo::before {
+            transform: translateX(100%);
+        }
+        
+        .member-info {
+            padding: 2rem;
+        }
+        
+        .member-name {
+            font-size: 1.5rem;
+            color: var(--primary-green);
+            margin-bottom: 0.5rem;
+        }
+        
+        .member-position {
+            color: var(--gold);
+            font-weight: 700;
+            margin-bottom: 1rem;
+            display: block;
+        }
+        
+        .member-contact {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 1.5rem;
+        }
+        
+        .member-contact a {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: var(--light-gray);
+            color: var(--primary-green);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: var(--transition);
+        }
+        
+        .member-contact a:hover {
+            background: var(--gold);
+            color: var(--dark-green);
+            transform: translateY(-3px);
+        }
+        
+        /* نموذج الانضمام */
+        .join-form {
+            background: var(--white);
+            padding: 4rem;
+            border-radius: 20px;
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.1);
+            max-width: 900px;
+            margin: 0 auto;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .join-form::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 100%;
+            height: 5px;
+            background: linear-gradient(to right, var(--gold), var(--light-green));
+        }
+        
+        .form-group {
+            margin-bottom: 2rem;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 0.8rem;
+            color: var(--primary-green);
+            font-weight: 700;
+            font-size: 1.1rem;
+        }
+        
+        .form-control {
+            width: 100%;
+            padding: 1rem 1.5rem;
+            border: 2px solid var(--medium-gray);
+            border-radius: 10px;
+            font-family: 'Cairo', sans-serif;
+            font-size: 1rem;
+            transition: var(--transition);
+            background: var(--light-gray);
+        }
+        
+        .form-control:focus {
+            outline: none;
+            border-color: var(--gold);
+            background: var(--white);
+            box-shadow: 0 0 0 3px rgba(212, 175, 55, 0.2);
+        }
+        
+        .form-row {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+        
+        .checkbox-group {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 15px;
+            margin-top: 1rem;
+        }
+        
+        .checkbox-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .checkbox-item input {
+            width: 20px;
+            height: 20px;
+        }
+        
+        /* الفوتر */
+        footer {
+            background: linear-gradient(135deg, var(--dark-green), var(--primary-green));
+            color: var(--white);
+            padding: 5rem 0 2rem;
+            position: relative;
+        }
+        
+        footer::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 100%;
+            height: 5px;
+            background: linear-gradient(to right, var(--gold), var(--light-green));
+        }
+        
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 40px;
+            margin-bottom: 3rem;
+        }
+        
+        .footer-logo h3 {
+            color: var(--white);
+            margin-bottom: 1.5rem;
+        }
+        
+        .footer-logo p {
+            color: var(--light-gold);
+        }
+        
+        .footer-links h4, .footer-contact h4, .footer-newsletter h4 {
+            color: var(--gold);
+            margin-bottom: 1.5rem;
+            font-size: 1.4rem;
+            position: relative;
+            padding-bottom: 10px;
+        }
+        
+        .footer-links h4::after, .footer-contact h4::after, .footer-newsletter h4::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 50px;
+            height: 3px;
+            background: var(--gold);
+        }
+        
+        .footer-links ul {
+            list-style: none;
+        }
+        
+        .footer-links ul li {
+            margin-bottom: 1rem;
+        }
+        
+        .footer-links ul li a {
+            color: var(--light-gold);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            transition: var(--transition);
+        }
+        
+        .footer-links ul li a:hover {
+            color: var(--gold);
+            padding-right: 10px;
+        }
+        
+        .footer-links ul li a i {
+            color: var(--gold);
+        }
+        
+        .footer-contact p {
+            color: var(--light-gold);
+            margin-bottom: 1.2rem;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        
+        .footer-contact i {
+            color: var(--gold);
+            width: 20px;
+        }
+        
+        .footer-newsletter p {
+            color: var(--light-gold);
+            margin-bottom: 1.5rem;
+        }
+        
+        .newsletter-form {
+            display: flex;
+            gap: 10px;
+        }
+        
+        .newsletter-form input {
+            flex: 1;
+            padding: 0.8rem 1.2rem;
+            border: none;
+            border-radius: 5px;
+            font-family: 'Cairo', sans-serif;
+        }
+        
+        .newsletter-form button {
+            background: var(--gold);
+            color: var(--dark-green);
+            border: none;
+            border-radius: 5px;
+            padding: 0.8rem 1.5rem;
+            font-weight: 700;
+            cursor: pointer;
+            transition: var(--transition);
+        }
+        
+        .newsletter-form button:hover {
+            background: var(--light-gold);
+        }
+        
+        .copyright {
+            text-align: center;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: var(--light-gold);
+            font-size: 0.95rem;
+        }
+        
+        /* التجاوب مع الهواتف */
+        @media (max-width: 1200px) {
+            h1 {
+                font-size: 3rem;
+            }
+            
+            h2 {
+                font-size: 2.5rem;
+            }
+            
+            .hero h1 {
+                font-size: 3.2rem;
+            }
+        }
+        
+        @media (max-width: 992px) {
+            .header-container {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 20px;
+            }
+            
+            nav {
+                width: 100%;
+                display: none;
+            }
+            
+            nav.active {
+                display: block;
+            }
+            
+            nav ul {
+                flex-direction: column;
+                gap: 0;
+            }
+            
+            nav ul li {
+                width: 100%;
+            }
+            
+            nav ul li a {
+                display: block;
+                padding: 1rem 0;
+                border-bottom: 1px solid var(--medium-gray);
+            }
+            
+            .mobile-menu-btn {
+                display: block;
+                position: absolute;
+                top: 1.5rem;
+                left: 30px;
+            }
+            
+            .hero h1 {
+                font-size: 2.8rem;
+            }
+            
+            .hero p {
+                font-size: 1.2rem;
+            }
+            
+            .join-form {
+                padding: 3rem;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .section {
+                padding: 4rem 0;
+            }
+            
+            h1 {
+                font-size: 2.5rem;
+            }
+            
+            h2 {
+                font-size: 2rem;
+            }
+            
+            .hero {
+                padding: 7rem 0 5rem;
+            }
+            
+            .hero h1 {
+                font-size: 2.2rem;
+            }
+            
+            .hero p {
+                font-size: 1.1rem;
+            }
+            
+            .hero-stats {
+                gap: 30px;
+            }
+            
+            .stat-number {
+                font-size: 2.5rem;
+            }
+            
+            .btn {
+                padding: 0.9rem 2rem;
+                font-size: 1rem;
+            }
+            
+            .mission-card, .vision-card {
+                padding: 2rem;
+            }
+            
+            .join-form {
+                padding: 2rem;
+            }
+        }
+        
+        @media (max-width: 576px) {
+            .container {
+                padding: 0 20px;
+            }
+            
+            .hero h1 {
+                font-size: 1.8rem;
+            }
+            
+            .hero-stats {
+                gap: 20px;
+            }
+            
+            .stat-number {
+                font-size: 2rem;
+            }
+            
+            .stat-text {
+                font-size: 1rem;
+            }
+            
+            .btn-outline {
+                margin-right: 0;
+                margin-bottom: 1rem;
+            }
+            
+            .form-row {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+            
+            .newsletter-form {
+                flex-direction: column;
+            }
+        }
+        
+        /* تأثيرات إضافية */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.8s ease, transform 0.8s ease;
+        }
+        
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+        .pulse {
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0% {
+                box-shadow: 0 0 0 0 rgba(212, 175, 55, 0.4);
+            }
+            70% {
+                box-shadow: 0 0 0 15px rgba(212, 175, 55, 0);
+            }
+            100% {
+                box-shadow: 0 0 0 0 rgba(212, 175, 55, 0);
+            }
+        }
+        
+        .floating {
+            animation: floating 3s ease-in-out infinite;
+        }
+        
+        @keyframes floating {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-15px); }
+            100% { transform: translateY(0px); }
+        }
+    </style>
+</head>
+<body>
+    <!-- الشريط العلوي -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="university-info">
+                <!-- شعار الجامعة -->
+                <img src="https://elearning.univ-ouargla.dz/pluginfile.php/1/theme_academi/logo/1767862738/Logo%20UKMO.jpg" alt="شعار جامعة قاصدي مرباح ورقلة" class="university-logo">
+                <span>جامعة قاصدي مرباح ورقلة - تكتل  الطلبة الجزئريين الأحرار/span>
+            </div>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- رأس الصفحة -->
+    <header id="header">
+        <div class="container header-container">
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <i class="fas fa-bars"></i>
+            </button>
+            
+            <div class="logo-container">
+                <!-- شعار التنظيم -->
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTG6Hp8nWGhO3iGyKlNIOtByyNcQ9twGcU40g&s" alt="شعار تكتل الطلبة الجزائريين الأحرار" class="logo">
+                <div class="logo-text">
+                    <h1>تكتل الطلبة الجزائريين الأحرار</h1>
+                    <p>فرع ورقلة - صناعة قادة المستقبل</p>
+                </div>
+            </div>
+            
+            <nav id="mainNav">
+                <ul>
+                    <li><a href="#home">الرئيسية</a></li>
+                    <li><a href="#about">من نحن</a></li>
+                    <li><a href="#vision">الرؤية والرسالة</a></li>
+                    <li><a href="#faculties">أقسام الكليات</a></li>
+                    <li><a href="#activities">الأنشطة والفعاليات</a></li>
+                    <li><a href="#leaders">صناعة القادة</a></li>
+                    <li><a href="#team">فريقنا</a></li>
+                    <li><a href="#join">انضم إلينا</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- قسم البطل -->
+    <section class="hero" id="home">
+        <div class="container hero-content animate__animated animate__fadeIn">
+            <h1>تكتل الطلبة الجزائريين الأحرار - ورقلة</h1>
+            <p>نحن حركة طلابية رائدة في جامعة قاصدي مرباح ورقلة، نعمل على <span class="highlight">صناعة جيل من الطلبة المبدعين والقادة</span> المؤثرين في مجتمعهم. نؤمن بأن الطالب هو عماد المستقبل وسنكون جسرًا لتحقيق تطلعاته.</p>
+            <a href="#join" class="btn btn-outline pulse">انضم إلى رحلة التميز</a>
+            <a href="#activities" class="btn floating">اكتشف أنشطتنا</a>
+            
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <span class="stat-number" data-count="500">0</span>
+                    <span class="stat-text">عضو نشط</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" data-count="120">0</span>
+                    <span class="stat-text">نشاط وفعالية</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" data-count="15">0</span>
+                    <span class="stat-text">قسم وفرع</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" data-count="8">0</span>
+                    <span class="stat-text">سنوات من العطاء</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم من نحن -->
+    <section class="section section-pattern" id="about">
+        <div class="container">
+            <div class="section-title">
+                <h2>من نحن</h2>
+                <p>تعرف على رحلة تأسيسنا وأهدافنا نحو مستقبل أفضل للطلبة</p>
+            </div>
+            
+            <div class="fade-in">
+                <p><strong>تكتل الطلبة الجزائريين الأحرار - فرع ورقلة</strong> هو تنظيم طلابي مستقل تأسس عام 2015 داخل جامعة قاصدي مرباح ورقلة، بقيادة مجموعة من الطلبة المتميزين الذين يؤمنون بدور الطالب الفاعل في بناء المجتمع.</p>
+                
+                <p>نعمل في إطار استقلالي ديمقراطي، نرفض أي تدخل خارجي، ونتخذ قراراتنا عبر هياكل تمثيلية تشاركية. نؤمن بأن <span class="highlight">الطالب المبدع هو من يصنع التغيير</span>، ونسعى لتمكينه من الأدوات والمعارف التي تجعله قادرًا على التأثير الإيجابي في محيطه الجامعي والمجتمعي.</p>
+                
+                <p>يشمل عملنا جميع مجالات الحياة الطلابية: الأكاديمية، الثقافية، الرياضية، الاجتماعية، والتنموية. نحن جسر بين الطلبة والإدارة الجامعية، ونعمل على حل المشاكل التي تواجه الطلبة وتحسين ظروفهم الدراسية والمعيشية.</p>
+                
+                <p><strong>رؤيتنا:</strong> أن نكون التنظيم الطلابي الرائد في الجزائر، الذي يصنع جيلاً من القادة والمبدعين القادرين على قيادة التغيير الإيجابي في المجتمع.</p>
+                
+                <p><strong>شعارنا:</strong> طالب مبدع.. مجتمع متقدم.</p>
+            </div>
+            
+            <div class="mission-vision fade-in">
+                <div class="mission-card">
+                    <div class="mission-icon">
+                        <i class="fas fa-bullseye"></i>
+                    </div>
+                    <h3>رسالتنا</h3>
+                    <p>تمثيل طلبة جامعة قاصدي مرباح ورقلة والدفاع عن حقوقهم، والعمل على تطوير مهاراتهم وقدراتهم عبر برامج تأهيلية متخصصة، وخلق بيئة جامعية محفزة للإبداع والتميز الأكاديمي والمهني.</p>
+                    <p>نسعى لبناء شراكات فاعلة مع جميع مكونات المجتمع الجامعي لتحقيق رؤية جامعة رائدة في التعليم والبحث العلمي وخدمة المجتمع.</p>
+                </div>
+                
+                <div class="vision-card">
+                    <div class="vision-icon">
+                        <i class="fas fa-eye"></i>
+                    </div>
+                    <h3>رؤيتنا</h3>
+                    <p>أن نكون التنظيم الطلابي النموذجي الذي يصنع قادة المستقبل، ويساهم في بناء مجتمع طلابي واعٍ، قادر على تحمل المسؤولية وقيادة التغيير الإيجابي في الجامعة والمجتمع.</p>
+                    <p>أن نكون بيت الخبرة للطلبة، ونقطة الانطلاق لطاقاتهم الإبداعية، وجسر تواصل بينهم وبين سوق العمل والمجتمع الخارجي.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم أقسام الكليات -->
+    <section class="section section-bg" id="faculties">
+        <div class="container">
+            <div class="section-title">
+                <h2>أقسام الكليات</h2>
+                <p>نغطي جميع التخصصات في جامعة قاصدي مرباح ورقلة</p>
+            </div>
+            
+            <div class="faculties">
+                <div class="faculty-card fade-in">
+                    <div class="faculty-header">
+                        <div class="faculty-icon">
+                            <i class="fas fa-laptop-code"></i>
+                        </div>
+                        <h3>قسم تكنولوجيا المعلومات والاتصالات</h3>
+                    </div>
+                    <div class="faculty-body">
+                        <p>نعمل على تطوير مهارات الطلبة في مجالات البرمجة، الذكاء الاصطناعي، أمن المعلومات، وتحليل البيانات.</p>
+                        <ul>
+                            <li>ورش عمل في البرمجة والتطوير</li>
+                            <li>مسابقات هاكاثون وتحديات تقنية</li>
+                            <li>تدريبات على أحدث التقنيات</li>
+                            <li>ربط الطلبة بشركات التكنولوجيا</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="faculty-card fade-in">
+                    <div class="faculty-header">
+                        <div class="faculty-icon">
+                            <i class="fas fa-microphone"></i>
+                        </div>
+                        <h3>قسم الإعلام والاتصال</h3>
+                    </div>
+                    <div class="faculty-body">
+                        <p>نطور مهارات الطلبة في الصحافة، الإذاعة، التصوير، التسويق الرقمي، وإدارة المحتوى.</p>
+                        <ul>
+                            <li>ورش عمل في التصوير والمونتاج</li>
+                            <li>تدريبات على الكتابة الإعلامية</li>
+                            <li>إنتاج محتوى لمواقع التواصل</li>
+                            <li>تدريبات في الإلقاء والتقديم</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="faculty-card fade-in">
+                    <div class="faculty-header">
+                        <div class="faculty-icon">
+                            <i class="fas fa-user-md"></i>
+                        </div>
+                        <h3>قسم الطب والعلوم الصحية</h3>
+                    </div>
+                    <div class="faculty-body">
+                        <p>ندعم طلبة الطب والعلوم الصحية ونساهم في تطوير مهاراتهم السريرية والعلمية.</p>
+                        <ul>
+                            <li>محاضرات طبية متخصصة</li>
+                            <li>ورش عمل في الإسعافات الأولية</li>
+                            <li>زيارات ميدانية للمستشفيات</li>
+                            <li>حملات توعوية صحية</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="faculty-card fade-in">
+                    <div class="faculty-header">
+                        <div class="faculty-icon">
+                            <i class="fas fa-book-open"></i>
+                        </div>
+                        <h3>قسم الآداب واللغات</h3>
+                    </div>
+                    <div class="faculty-body">
+                        <p>نعمل على تنمية المهارات اللغوية والأدبية لدى الطلبة وتعزيز التبادل الثقافي.</p>
+                        <ul>
+                            <li>نوادي حوار ولغات</li>
+                            <li>مسابقات في الكتابة الإبداعية</li>
+                            <li>ورش ترجمة وتحليل نصي</li>
+                            <li>فعاليات ثقافية وأدبية</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="faculty-card fade-in">
+                    <div class="faculty-header">
+                        <div class="faculty-icon">
+                            <i class="fas fa-scale-balanced"></i>
+                        </div>
+                        <h3>قسم الحقوق والعلوم السياسية</h3>
+                    </div>
+                    <div class="faculty-body">
+                        <p>نساهم في تنمية الوعي القانوني والسياسي لدى الطلبة وتعزيز ثقافة الحقوق والواجبات.</p>
+                        <ul>
+                            <li>محاكيات لمحاكم وجلسات</li>
+                            <li>ورش عمل في البحث القانوني</li>
+                            <li>حلقات نقاش سياسية</li>
+                            <li>زيارات لمؤسسات قانونية</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="faculty-card fade-in">
+                    <div class="faculty-header">
+                        <div class="faculty-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h3>قسم العلوم الاقتصادية والتسيير</h3>
+                    </div>
+                    <div class="faculty-body">
+                        <p>نطور مهارات الطلبة في الاقتصاد، الإدارة، المحاسبة، والتسويق لمواكبة متطلبات سوق العمل.</p>
+                        <ul>
+                            <li>محاضرات في ريادة الأعمال</li>
+                            <li>ورش عمل في التحليل المالي</li>
+                            <li>مسابقات خطط أعمال</li>
+                            <li>زيارات لشركات ومؤسسات</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم الأنشطة والفعاليات -->
+    <section class="section" id="activities">
+        <div class="container">
+            <div class="section-title">
+                <h2>الأنشطة والفعاليات</h2>
+                <p>ننظم مجموعة متنوعة من الفعاليات لتنمية مهارات الطلبة</p>
+            </div>
+            
+            <div class="activities">
+                <div class="activity-card fade-in">
+                    <div class="activity-img" style="background-image: url('https://images.unsplash.com/photo-1542744095-fcf48d80b0fd?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80');">
+                        <div class="activity-overlay">
+                            <h3 class="activity-title">أسبوع البرمجة والذكاء الاصطناعي</h3>
+                        </div>
+                    </div>
+                    <div class="activity-body">
+                        <span class="activity-date">15-20 مارس 2024</span>
+                        <p>أسبوع مكثف من ورش العمل والمسابقات في البرمجة، تطوير الويب، الذكاء الاصطناعي، وتحليل البيانات. بمشاركة خبراء من شركات التكنولوجيا الرائدة.</p>
+                    </div>
+                </div>
+                
+                <div class="activity-card fade-in">
+                    <div class="activity-img" style="background-image: url('https://images.unsplash.com/photo-1559136555-9303baea8ebd?ixlib=rb-4.0.3&auto=format&fit=crop&w-800&q=80');">
+                        <div class="activity-overlay">
+                            <h3 class="activity-title">مؤتمر القيادة الطلابية</h3>
+                        </div>
+                    </div>
+                    <div class="activity-body">
+                        <span class="activity-date">10-12 أبريل 2024</span>
+                        <p>مؤتمر سنوي يجمع القيادات الطلابية من مختلف الجامعات الجزائرية لمناقشة قضايا الطلبة وتبادل الخبرات في مجال القيادة وإدارة المنظمات الطلابية.</p>
+                    </div>
+                </div>
+                
+                <div class="activity-card fade-in">
+                    <div class="activity-img" style="background-image: url('https://images.unsplash.com/photo-1540575467063-178a50c2df87?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80');">
+                        <div class="activity-overlay">
+                            <h3 class="activity-title">ماراثون الابتكار الاجتماعي</h3>
+                        </div>
+                    </div>
+                    <div class="activity-body">
+                        <span class="activity-date">5-7 مايو 2024</span>
+                        <p>مسابقة لتطوير حلول مبتكرة للتحديات المجتمعية في ورقلة. يقدم الطلبة مشاريع في مجالات التعليم، الصحة، البيئة، والتكنولوجيا.</p>
+                    </div>
+                </div>
+                
+                <div class="activity-card fade-in">
+                    <div class="activity-img" style="background-image: url('https://images.unsplash.com/photo-1511795409834-ef04bbd61622?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80');">
+                        <div class="activity-overlay">
+                            <h3 class="activity-title">مهرجان الثقافات الجامعية</h3>
+                        </div>
+                    </div>
+                    <div class="activity-body">
+                        <span class="activity-date">22-25 مايو 2024</span>
+                        <p>فعالية ثقافية تعرض تنوع التراث الجزائري والعالمي من خلال عروض فنية، أطباق تقليدية، أزياء، وموسيقى من مختلف الثقافات.</p>
+                    </div>
+                </div>
+                
+                <div class="activity-card fade-in">
+                    <div class="activity-img" style="background-image: url('https://images.unsplash.com/photo-1559136555-9303baea8ebd?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80');">
+                        <div class="activity-overlay">
+                            <h3 class="activity-title">معرض التوظيف والتدريب</h3>
+                        </div>
+                    </div>
+                    <div class="activity-body">
+                        <span class="activity-date">15-17 يونيو 2024</span>
+                        <p>معرض يجمع أهم الشركات والمؤسسات في ورقلة والجزائر لعرض فرص العمل والتدريب للطلبة والخريجين في مختلف التخصصات.</p>
+                    </div>
+                </div>
+                
+                <div class="activity-card fade-in">
+                    <div class="activity-img" style="background-image: url('https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80');">
+                        <div class="activity-overlay">
+                            <h3 class="activity-title">برنامج التميز الأكاديمي</h3>
+                        </div>
+                    </div>
+                    <div class="activity-body">
+                        <span class="activity-date">مستمر طوال العام</span>
+                        <p>برنامج دعم أكاديمي يشمل حصص تقوية، ورش عمل في منهجية البحث، إعداد للمسابقات الوطنية والدولية، ومرافقة في المشاريع البحثية.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم صناعة القادة -->
+    <section class="section leaders-program" id="leaders">
+        <div class="container">
+            <div class="section-title">
+                <h2>برنامج صناعة القادة</h2>
+                <p>نسعى لصناعة جيل من القادة المبدعين المؤثرين في مجتمعهم</p>
+            </div>
+            
+            <div class="fade-in" style="text-align: center; max-width: 900px; margin: 0 auto 4rem;">
+                <p>نؤمن في تكتل الطلبة الجزائريين الأحرار بأن <span class="highlight">كل طالب يحمل بداخله قائدًا مبدعًا</span> ينتظر من يكتشف قدراته ويمنحه الأدوات المناسبة للتطور. من هذا المنطلق، أطلقنا برنامج "صناعة القادة" الذي يهدف إلى اكتشاف وتطوير المواهب القيادية لدى الطلبة.</p>
+            </div>
+            
+            <div class="program-steps">
+                <div class="step fade-in">
+                    <div class="step-number">1</div>
+                    <h3>اكتشاف المواهب</h3>
+                    <p>نقيم اختبارات وتقييمات لاكتشاف المواهب والميول القيادية لدى الطلبة وتحديد مسارات التطوير المناسبة لكل فرد.</p>
+                </div>
+                
+                <div class="step fade-in">
+                    <div class="step-number">2</div>
+                    <h3>التدريب المتخصص</h3>
+                    <p>نقدم برامج تدريبية متخصصة في القيادة، التواصل الفعال، إدارة المشاريع، التفكير النقدي، وحل المشكلات.</p>
+                </div>
+                
+                <div class="step fade-in">
+                    <div class="step-number">3</div>
+                    <h3>التطبيق العملي</h3>
+                    <p>نمنح الطلبة فرصًا حقيقية لتطبيق مهاراتهم القيادية من خلال إدارة فرق العمل، تنظيم الفعاليات، وقيادة المبادرات.</p>
+                </div>
+                
+                <div class="step fade-in">
+                    <div class="step-number">4</div>
+                    <h3>المرافقة والتطوير</h3>
+                    <p>نوفر مرافقة مستمرة من قبل مدربين وخبراء لتطوير الأداء وتقديم التغذية الراجعة والتوجيه المهني.</p>
+                </div>
+                
+                <div class="step fade-in">
+                    <div class="step-number">5</div>
+                    <h3>الانطلاق والتأثير</h3>
+                    <p>نمكن القادة المتدربين من قيادة مبادرات ومشاريع حقيقية يكون لها تأثير إيجابي في الجامعة والمجتمع.</p>
+                </div>
+                
+                <div class="step fade-in">
+                    <div class="step-number">6</div>
+                    <h3>بناء الشبكات</h3>
+                    <p>نربط القادة الطلبة بشبكات محلية وإقليمية ودولية لتبادل الخبرات وتوسيع آفاقهم وفرصهم المستقبلية.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم الفريق -->
+    <section class="section section-bg" id="team">
+        <div class="container">
+            <div class="section-title">
+                <h2>فريق القيادة</h2>
+                <p>مجموعة من الطلبة المتميزين الذين يقودون رحلة التميز</p>
+            </div>
+            
+            <div class="team">
+                <div class="team-member fade-in">
+                    <div class="member-photo">
+                        <i class="fas fa-user-tie"></i>
+                    </div>
+                    <div class="member-info">
+                        <h3 class="member-name">ليمان محمد مندر</h3>
+                        <span class="member-position">رئيس المكتب الولائي</span>
+                        <p>طالب في السنة الرابعة علوم سياسية، يقود فريق التكتل منذ عام 2022. يتمتع بخبرة في القيادة الطلابية وإدارة المشاريع.</p>
+                        <div class="member-contact">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#"><i class="fas fa-envelope"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="team-member fade-in">
+                    <div class="member-photo">
+                        <i class="fas fa-users-cog"></i>
+                    </div>
+                    <div class="member-info">
+                        <h3 class="member-name">عامري رياض يوسف</h3>
+                        <span class="member-position">مسؤول التنظيم</span>
+                        <p>طالب في السنة الثالثة إدارة أعمال، متخصص في التنظيم والإدارة. يشرف على الهيكل التنظيمي والتنسيق بين اللجان.</p>
+                        <div class="member-contact">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#"><i class="fas fa-envelope"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="team-member fade-in">
+                    <div class="member-photo">
+                        <i class="fas fa-bullhorn"></i>
+                    </div>
+                    <div class="member-info">
+                        <h3 class="member-name">مهدي رواء نور السلام</h3>
+                        <span class="member-position">مسؤول الإعلام</span>
+                        <p>طالب في السنة الرابعة إعلام واتصال، يشرف على التواصل الداخلي والخارجي والتغطية الإعلامية للأنشطة.</p>
+                        <div class="member-contact">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#"><i class="fas fa-envelope"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="team-member fade-in">
+                    <div class="member-photo">
+                        <i class="fas fa-calendar-alt"></i>
+                    </div>
+                    <div class="member-info">
+                        <h3 class="member-name">انتصار</h3>
+                        <span class="member-position">مسؤولة النشاطات</span>
+                        <p>طالبة في السنة الثالثة علوم اجتماعية، تشرف على تنظيم وتنسيق جميع الفعاليات والأنشطة الثقافية والرياضية.</p>
+                        <div class="member-contact">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#"><i class="fas fa-envelope"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="team-member fade-in">
+                    <div class="member-photo">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <div class="member-info">
+                        <h3 class="member-name">خالد</h3>
+                        <span class="member-position">مسؤول تكنولوجيا المعلومات</span>
+                        <p>طالب في السنة الرابعة علوم الحاسوب، يشرف على الجانب التقني والرقمي للتكتل وتطوير المنصة الإلكترونية.</p>
+                        <div class="member-contact">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#"><i class="fas fa-envelope"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="team-member fade-in">
+                    <div class="member-photo">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="member-info">
+                        <h3 class="member-name">سارة</h3>
+                        <span class="member-position">مسؤولة التميز الأكاديمي</span>
+                        <p>طالبة في السنة الرابعة طب، تشرف على برامج الدعم الأكاديمي وتنمية القدرات العلمية والبحثية للطلبة.</p>
+                        <div class="member-contact">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#"><i class="fas fa-envelope"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم الانضمام -->
+    <section class="section" id="join">
+        <div class="container">
+            <div class="section-title">
+                <h2>انضم إلى رحلة التميز</h2>
+                <p>كن جزءًا من مجتمع الطلبة المبدعين والقادة المستقبليين</p>
+            </div>
+            
+            <div class="join-form fade-in">
+                <form id="joinForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="fullName">الاسم الكامل *</label>
+                            <input type="text" id="fullName" class="form-control" required placeholder="أدخل اسمك الكامل">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="universityId">رقم القيد الجامعي *</label>
+                            <input type="text" id="universityId" class="form-control" required placeholder="رقم القيد في الجامعة">
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="faculty">الكلية أو المعهد *</label>
+                            <select id="faculty" class="form-control" required>
+                                <option value="">اختر الكلية أو المعهد</option>
+                                <option value="sciences">كلية العلوم</option>
+                                <option value="technology">كلية التكنولوجيا</option>
+                                <option value="law">كلية الحقوق والعلوم السياسية</option>
+                                <option value="letters">كلية الآداب واللغات</option>
+                                <option value="economics">كلية العلوم الاقتصادية والتجارية وعلوم التسيير</option>
+                                <option value="health">كلية علوم الطبيعة والحياة</option>
+                                <option value="medicine">كلية الطب</option>
+                                <option value="engineering">كلية الهندسة</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="studyLevel">المستوى الدراسي *</label>
+                            <select id="studyLevel" class="form-control" required>
+                                <option value="">اختر المستوى الدراسي</option>
+                                <option value="l1">سنة أولى ليسانس</option>
+                                <option value="l2">سنة ثانية ليسانس</option>
+                                <option value="l3">سنة ثالثة ليسانس</option>
+                                <option value="m1">سنة أولى ماستر</option>
+                                <option value="m2">سنة ثانية ماستر</option>
+                                <option value="doctorat">دكتوراه</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="phone">رقم الهاتف *</label>
+                            <input type="tel" id="phone" class="form-control" required placeholder="رقم هاتفك للتواصل">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">البريد الإلكتروني *</label>
+                            <input type="email" id="email" class="form-control" required placeholder="بريدك الإلكتروني">
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>مجالات اهتمامك (يمكن اختيار أكثر من واحد) *</label>
+                        <div class="checkbox-group">
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="cultural" name="interests" value="cultural">
+                                <label for="cultural">النشاطات الثقافية والفنية</label>
+                            </div>
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="sport" name="interests" value="sport">
+                                <label for="sport">النشاطات الرياضية</label>
+                            </div>
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="academic" name="interests" value="academic">
+                                <label for="academic">التطوير الأكاديمي والبحثي</label>
+                            </div>
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="media" name="interests" value="media">
+                                <label for="media">الإعلام والتواصل</label>
+                            </div>
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="it" name="interests" value="it">
+                                <label for="it">تكنولوجيا المعلومات</label>
+                            </div>
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="leadership" name="interests" value="leadership">
+                                <label for="leadership">القيادة وتنمية المهارات</label>
+                            </div>
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="volunteer" name="interests" value="volunteer">
+                                <label for="volunteer">العمل التطوعي والمجتمعي</label>
+                            </div>
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="entrepreneurship" name="interests" value="entrepreneurship">
+                                <label for="entrepreneurship">ريادة الأعمال والابتكار</label>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="skills">المهارات والخبرات السابقة (اختياري)</label>
+                        <textarea id="skills" class="form-control" rows="3" placeholder="اذكر أي مهارات أو خبرات سابقة لديك في العمل الطلابي أو التطوعي"></textarea>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">لماذا تريد الانضمام إلى تكتل الطلبة الجزائريين الأحرار؟ *</label>
+                        <textarea id="message" class="form-control" rows="4" required placeholder="شاركنا دوافعك وطموحاتك للانضمام إلى فريقنا"></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn" style="width: 100%; padding: 1.2rem; font-size: 1.2rem;">إرسال طلب الانضمام</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- الفوتر -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h3>تكتل الطلبة الجزائريين الأحرار</h3>
+                    <p>فرع ورقلة - جامعة قاصدي مرباح</p>
+                    <p>نحن حركة طلابية رائدة تعمل على تمكين الطلبة وصناعة قادة المستقبل. انضم إلينا في رحلة التميز والإبداع.</p>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>روابط سريعة</h4>
+                    <ul>
+                        <li><a href="#home"><i class="fas fa-chevron-left"></i> الرئيسية</a></li>
+                        <li><a href="#about"><i class="fas fa-chevron-left"></i> من نحن</a></li>
+                        <li><a href="#faculties"><i class="fas fa-chevron-left"></i> أقسام الكليات</a></li>
+                        <li><a href="#activities"><i class="fas fa-chevron-left"></i> الأنشطة والفعاليات</a></li>
+                        <li><a href="#leaders"><i class="fas fa-chevron-left"></i> صناعة القادة</a></li>
+                        <li><a href="#team"><i class="fas fa-chevron-left"></i> فريقنا</a></li>
+                        <li><a href="#join"><i class="fas fa-chevron-left"></i> انضم إلينا</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-contact">
+                    <h4>معلومات الاتصال</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> جامعة قاصدي مرباح ورقلة، حي النخيل، ورقلة، الجزائر</p>
+                    <p><i class="fas fa-envelope"></i> ceal.ouargla@univ-ouargla.dz</p>
+                    <p><i class="fas fa-phone"></i> +213 123 456 789</p>
+                    <p><i class="fas fa-clock"></i> الأحد - الخميس: 8:00 ص - 6:00 م</p>
+                </div>
+                
+                <div class="footer-newsletter">
+                    <h4>النشرة الإخبارية</h4>
+                    <p>اشترك في نشرتنا الإخبارية لتصلك آخر أخبار الأنشطة والفعاليات</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="بريدك الإلكتروني" required>
+                        <button type="submit">اشتراك</button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>جميع الحقوق محفوظة &copy; 2024 تكتل الطلبة الجزائريين الأحرار - فرع ورقلة | صمم بكل فخر لخدمة طلبة جامعة قاصدي مرباح ورقلة</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // تفعيل القائمة المتحركة على الهواتف
+        document.getElementById('mobileMenuBtn').addEventListener('click', function() {
+            const nav = document.getElementById('mainNav');
+            nav.classList.toggle('active');
+            
+            // تغيير أيقونة الزر
+            const icon = this.querySelector('i');
+            if (icon.classList.contains('fa-bars')) {
+                icon.classList.remove('fa-bars');
+                icon.classList.add('fa-times');
+            } else {
+                icon.classList.remove('fa-times');
+                icon.classList.add('fa-bars');
+            }
+        });
+        
+        // إغلاق القائمة عند النقر على رابط
+        document.querySelectorAll('#mainNav a').forEach(link => {
+            link.addEventListener('click', () => {
+                const nav = document.getElementById('mainNav');
+                if (nav.classList.contains('active')) {
+                    nav.classList.remove('active');
+                    
+                    // إعادة أيقونة القائمة
+                    const icon = document.querySelector('#mobileMenuBtn i');
+                    icon.classList.remove('fa-times');
+                    icon.classList.add('fa-bars');
+                }
+            });
+        });
+        
+        // تأثير التمرير على رأس الصفحة
+        window.addEventListener('scroll', function() {
+            const header = document.getElementById('header');
+            if (window.scrollY > 100) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+        
+        // تأثير العد للأرقام في قسم البطل
+        function animateCounter(element) {
+            const target = parseInt(element.getAttribute('data-count'));
+            const duration = 2000; // 2 ثانية
+            const step = Math.ceil(target / (duration / 16)); // 60 إطار في الثانية
+            let current = 0;
+            
+            const timer = setInterval(() => {
+                current += step;
+                if (current >= target) {
+                    element.textContent = target;
+                    clearInterval(timer);
+                } else {
+                    element.textContent = current;
+                }
+            }, 16);
+        }
+        
+        // تفعيل العد عند التمرير للقسم
+        function checkCounters() {
+            const counters = document.querySelectorAll('.stat-number');
+            counters.forEach(counter => {
+                const rect = counter.getBoundingClientRect();
+                if (rect.top < window.innerHeight - 100 && rect.bottom > 0) {
+                    if (!counter.classList.contains('animated')) {
+                        counter.classList.add('animated');
+                        animateCounter(counter);
+                    }
+                }
+            });
+        }
+        
+        // تأثير الظهور التدريجي للعناصر
+        function checkFadeIn() {
+            const fadeElements = document.querySelectorAll('.fade-in');
+            fadeElements.forEach(element => {
+                const rect = element.getBoundingClientRect();
+                if (rect.top < window.innerHeight - 100 && rect.bottom > 0) {
+                    element.classList.add('visible');
+                }
+            });
+        }
+        
+        // معالجة نموذج الانضمام
+        document.getElementById('joinForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // جمع البيانات من النموذج
+            const interests = Array.from(document.querySelectorAll('input[name="interests"]:checked')).map(cb => cb.value);
+            
+            if (interests.length === 0) {
+                alert('يرجى اختيار مجال اهتمام واحد على الأقل');
+                return;
+            }
+            
+            const formData = {
+                fullName: document.getElementById('fullName').value,
+                universityId: document.getElementById('universityId').value,
+                faculty: document.getElementById('faculty').value,
+                studyLevel: document.getElementById('studyLevel').value,
+                phone: document.getElementById('phone').value,
+                email: document.getElementById('email').value,
+                interests: interests,
+                skills: document.getElementById('skills').value,
+                message: document.getElementById('message').value
+            };
+            
+            // هنا يمكنك إرسال البيانات إلى الخادم
+            // لأغراض العرض، سنعرض رسالة نجاح متطورة
+            const successMessage = `
+                <div style="text-align: center; padding: 30px;">
+                    <i class="fas fa-check-circle" style="font-size: 5rem; color: var(--gold); margin-bottom: 20px;"></i>
+                    <h3 style="color: var(--primary-green); margin-bottom: 15px;">تم استلام طلبك بنجاح!</h3>
+                    <p>شكراً لك ${formData.fullName} على اهتمامك بالانضمام إلى تكتل الطلبة الجزائريين الأحرار.</p>
+                    <p>سيتم مراجعة طلبك من قبل فريقنا وسنتواصل معك عبر البريد الإلكتروني أو الهاتف خلال 3 أيام عمل.</p>
+                    <p>نتمنى لك رحلة مثمرة معنا نحو التميز والقيادة.</p>
+                    <button onclick="this.parentElement.parentElement.style.display='none'" style="margin-top: 20px; padding: 10px 30px; background: var(--gold); color: var(--dark-green); border: none; border-radius: 5px; font-weight: bold; cursor: pointer;">حسناً</button>
+                </div>
+            `;
+            
+            // إنشاء نافذة منبثقة
+            const popup = document.createElement('div');
+            popup.style.position = 'fixed';
+            popup.style.top = '0';
+            popup.style.right = '0';
+            popup.style.width = '100%';
+            popup.style.height = '100%';
+            popup.style.backgroundColor = 'rgba(0,0,0,0.8)';
+            popup.style.display = 'flex';
+            popup.style.alignItems = 'center';
+            popup.style.justifyContent = 'center';
+            popup.style.zIndex = '2000';
+            
+            const popupContent = document.createElement('div');
+            popupContent.style.background = 'white';
+            popupContent.style.borderRadius = '15px';
+            popupContent.style.padding = '20px';
+            popupContent.style.maxWidth = '500px';
+            popupContent.style.width = '90%';
+            popupContent.style.boxShadow = '0 20px 50px rgba(0,0,0,0.3)';
+            popupContent.innerHTML = successMessage;
+            
+            popup.appendChild(popupContent);
+            document.body.appendChild(popup);
+            
+            // إعادة تعيين النموذج بعد 5 ثواني
+            setTimeout(() => {
+                this.reset();
+                if (document.body.contains(popup)) {
+                    document.body.removeChild(popup);
+                }
+            }, 5000);
+        });
+        
+        // تفعيل النشرة الإخبارية
+        document.querySelector('.newsletter-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const email = this.querySelector('input[type="email"]').value;
+            
+            if (email) {
+                this.innerHTML = '<p style="color: var(--gold); text-align: center; font-weight: bold;">شكراً للاشتراك في نشرتنا الإخبارية!</p>';
+                setTimeout(() => {
+                    this.reset();
+                    this.innerHTML = `
+                        <input type="email" placeholder="بريدك الإلكتروني" required>
+                        <button type="submit">اشتراك</button>
+                    `;
+                }, 3000);
+            }
+        });
+        
+        // تهيئة الأحداث عند التحميل
+        window.addEventListener('load', function() {
+            checkCounters();
+            checkFadeIn();
+        });
+        
+        // تحديث التأثيرات عند التمرير
+        window.addEventListener('scroll', function() {
+            checkCounters();
+            checkFadeIn();
+        });
+        
+        // التمرير السلس للروابط الداخلية
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 100,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
