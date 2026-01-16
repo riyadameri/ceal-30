@@ -24,7 +24,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use('/uploads', express.static('uploads'));
 
 // MongoDB Atlas Connection - Updated for Mongoose 6+
-const MONGODB_URI = process.env.MONGODB_URI || 'mongodb+srv://maxgame950:ra0NsE8MHfWinSOR@cluster0.0vaynqs.mongodb.net/student_organization?retryWrites=true&w=majority&appName=Cluster0';
+const MONGODB_URI = process.env.MONGODB_URI || 'mongodb://riyadammmeri:OmGe6UeG1Q0hVJEq@ac-ujqhcf3-shard-00-00.7xu8hz3.mongodb.net:27017,ac-ujqhcf3-shard-00-01.7xu8hz3.mongodb.net:27017,ac-ujqhcf3-shard-00-02.7xu8hz3.mongodb.net:27017/?ssl=true&replicaSet=atlas-3anew8-shard-0&authSource=admin&retryWrites=true&w=majority&appName=Cluster0';
 // const MONGODB_URI = 'mongodb://localhost:27017/student-organization';
 const connectDB = async () => {
     try {
